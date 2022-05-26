@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     font-family: Cairo, sans-serif;
+    scroll-behavior: smooth;
 }
 
 
@@ -36,6 +37,9 @@ nav a:hover{
     font-weight: 600;
 }
 
+:target{
+    scroll-margin-top: 70px;
+}
 
 /*  Scrollbar  */
 

@@ -1,0 +1,343 @@
+@font-face {
+    font-family: Cairo;
+    src: url(css/Cairo/static/Cairo-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cairo, sans-serif;
+}
+
+
+/*  Navbar  */
+
+nav{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: black;
+    z-index: 10;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 275px;
+    font-family: Cairo, sans-serif;
+}
+
+nav a:hover{
+    background-color: white;
+    color: black;
+    font-weight: 600;
+}
+
+
+/*  Scrollbar  */
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: white;
+}
+
+
+/*  Body   */
+
+body{
+    background-color: #1e1e1e;
+}
+
+body h1, body p, body h2, body li{
+    color: white;
+}
+
+
+/*  Sobre Mi  */
+
+.imagenFake{
+    width: 400px;
+    height: 400px;
+    background-color: bisque;
+}
+
+.sobreMi{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.yo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    margin:0px 0px 25px 0px;
+    width: 100%;
+    padding: 20px 0px;
+    font-size: 50px;
+    font-weight: 800;
+    background-color: black;
+    text-align: center;
+}
+
+.yo .imagenFake{
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px black;
+}
+
+#sobreMiParagrafo{
+    width: 500px;
+    height: 500px;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+
+
+/*  Conocimientos  */
+
+.conocimientos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.conocimientos p{
+    margin: 70px 0px;
+}
+
+.conocimientos ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.conocimientos ul li{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+}
+.codeImage{
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+.imagenCodigo{
+    width: 100%;
+    height: auto;
+}
+
+#cssImagen{
+    transform: scale(0.9);
+}
+
+
+/* Cursos */
+
+.cursos{
+    text-align: center;
+}
+
+.cursos ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.cursos ul li{
+    font-size: 20px;
+    margin: 20px;
+}
+
+.cursos ul li:hover{
+    color: rgba(250, 122, 246, 0.5);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.primerCurso, .segundoCurso, .tercerCurso{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    box-shadow: 0px 0px 0px 2px white;
+    padding: 40px;
+    height: 400px;
+    text-align: center;
+}
+
+.primerCurso img, .segundoCurso img, .tercerCurso img{
+    max-width: 100%;
+    max-height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 0px black;
+    transition: all 0.3s;
+}
+
+.primerCurso img:hover, .segundoCurso img:hover, .tercerCurso img:hover{
+    transform: scale(1.1);
+}
+
+
+/* Proyectos */
+
+.proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 60px 0px;
+}
+
+
+/* Idiomas */
+
+.idiomas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+.espanol, .ingles{
+    width: 300px;
+    margin: 50px;
+    padding: 10px;  
+    box-shadow: 0px 0px 0px 2px white;
+}
+
+.espanol h3, .ingles h3{
+    text-align: center;
+    color: white;
+    font-weight: 900;
+}
+
+.espanol p, .ingles p{
+    margin: 0px;
+    text-align: center;
+}
+
+
+/*  Contactame  */
+
+.contactame{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contactame h3{
+    color: white;
+    
+}
+
+.formContacto{
+    padding: 50px;
+    border: 2px solid white;
+}
+
+.formContacto form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input{
+    width: 400px;
+    height: 50px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#descripcionInput{
+    height: 300px;
+}
+
+#inputEnviar{
+    width: 200px;
+    color: white;
+    font-weight: 900;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s;
+}
+
+#inputEnviar:hover{
+    transform: scale(1.1);
+    background: white;
+    color: black;
+}
+
+
+/*  Footer  */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-top: 50px;
+    height: 100px;
+}
+
+footer a{
+    text-align: center;
+    height: auto;
+    width: 30px;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px 20px;
+    color: white;
+}
+
+.footerImage{
+    height: 40px;
+    border-radius: 0px;
+    filter: grayscale(1);
+    transition: all 0.6s;
+    padding: 0px;
+}
+
+footer a:hover{
+    background-color: rgba(200, 200, 200, 0.5);
+    border-radius: 100%;
+}
+
+#linkedin{
+    filter: invert(1);
+}
+
+#mailFooter{
+    filter: invert(1);
+}

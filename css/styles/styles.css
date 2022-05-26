@@ -140,7 +140,17 @@ h1{
     align-items: center;
     font-weight: 700;
 }
+
 .codeImage{
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagenFalsa{
     height: 200px;
     width: 200px;
     margin: 15px;

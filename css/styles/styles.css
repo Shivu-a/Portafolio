@@ -226,6 +226,35 @@ h1{
     flex-wrap: wrap;
     flex-direction: row;
     margin: 60px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyecto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    border: 2px solid gold;
+    padding: 10px;
+    transition: all 0.3s;
+    margin: 20px;
+}
+
+.proyecto a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.proyecto img{
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 10px 2px black;
+}
+
+.proyecto:hover{
+    transform: scale(1.1);
 }
 
 

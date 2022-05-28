@@ -236,7 +236,7 @@ h1{
     justify-content: center;
     align-items: center;
     width: 500px;
-    border: 2px solid gold;
+    border: 2px solid white;
     padding: 10px;
     transition: all 0.3s;
     margin: 20px;
@@ -245,6 +245,7 @@ h1{
 .proyecto a{
     text-decoration: none;
     cursor: pointer;
+    margin: 10px 0px;
 }
 
 .proyecto img{

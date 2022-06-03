@@ -1,134 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sebastian Diaz Dopazo</title>
     <script src="scripts/script.js"></script>
-    <link rel="stylesheet" href="css/styles/styles.css">
-    <link rel="stylesheet" href="css/fontAwesome/all.css">
-    <link rel="shortcut icon" href="media/SDD.png" type="image/x-icon">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="css/styles/styles.css" />
+    <link rel="stylesheet" href="css/fontAwesome/all.css" />
+    <link rel="shortcut icon" href="media/SDD.png" type="image/x-icon" />
+  </head>
+  <body>
     <nav>
-        <a href="#sobreMiH1" class="goTo" rel="noopener noreferrer">Sobre Mi</a>
-        <a href="#conocimientos" class="goTo" rel="noopener noreferrer">Conocimientos</a>
-        <a href="#contactame" class="goTo" rel="noopener noreferrer">Contactame</a>
+      <a href="#sobreMiH1" class="goTo" rel="noopener noreferrer">Sobre Mi</a>
+      <a href="#conocimientos" class="goTo" rel="noopener noreferrer">Conocimientos</a>
+      <a href="#contactame" class="goTo" rel="noopener noreferrer">Contactame</a>
     </nav>
 
     <h1 id="sobreMiH1">Sobre Mi</h1>
     <div class="sobreMi">
-        <div class="yo">
-            <div class="imagenFake"></div>
-        </div>
-        <p id="sobreMiParagrafo">Soy un aspirante a programador que reside en Montevideo.<br> Mi objetivo es ser Licenciado en Sistemas y busco trabajo para pagarme la facultad.</p>
+      <div class="yo">
+        <div class="imagenFake"></div>
+      </div>
+      <p id="sobreMiParagrafo">
+        Soy un aspirante a programador que reside en Montevideo.<br />
+        Mi objetivo es ser Licenciado en Sistemas y busco trabajo para pagarme la facultad.
+      </p>
     </div>
 
     <div id="conocimientos" class="conocimientos">
-        <h1>Conocimientos</h1>
-        <p>Me especializo en desarollo Web front-end y utilizo las siguientes herramientas:</p>
+      <h1>Conocimientos</h1>
+      <p>Me especializo en desarollo Web front-end y utilizo las siguientes herramientas:</p>
+      <ul>
+        <li>
+          <h2>HTML5</h2>
+          <div class="codeImage">
+            <img src="media/HTML5.png" alt="HTML5" class="imagenCodigo" />
+          </div>
+        </li>
+        <li>
+          <h2>CSS</h2>
+          <div class="codeImage">
+            <img src="media/css.png" alt="CSS" id="cssImagen" class="imagenCodigo" />
+          </div>
+        </li>
+        <li>
+          <h2>JavaScript (EM6)</h2>
+          <div class="codeImage">
+            <img src="media/JScript.png" alt="JavaScript" class="imagenCodigo" />
+          </div>
+        </li>
+        <li>
+          <h2>Bootsrap</h2>
+          <div class="codeImage">
+            <img src="media/Bootstrap.png" alt="Bootsrap" class="imagenCodigo" />
+          </div>
+        </li>
+        <li>
+          <h2>React</h2>
+          <div class="codeImage">
+            <img src="media/react.png" alt="React" class="imagenCodigo" />
+          </div>
+        </li>
+      </ul>
+
+      <p>
+        Termine la fase 1 y 2 de "Jovenes a Programar", un programa uruguayo que enseña lo basico de
+        programacion a sus alumnos ademas de conocimientos necesarios para estar en un ambiente de
+        trabajo.
+      </p>
+
+      <div class="cursos">
+        <h2>Tambien complete los siguientes cursos de Udemy:</h2>
         <ul>
-            <li>HTML5 <div class="codeImage"><img src="media/HTML5.png" alt="HTML5" class="imagenCodigo"></div></li>
-            <li>CSS <div class="codeImage"><img src="media/css.png" alt="CSS" id="cssImagen" class="imagenCodigo"></div></li>
-            <li>JavaScript (EM6) <div class="codeImage"><img src="media/JScript.png" alt="JavaScript" class="imagenCodigo"></div></li>
-            <li>Bootsrap <div class="codeImage"><img src="media/Bootstrap.png" alt="Bootsrap" class="imagenCodigo"></div></li>
-            <li>React <div class="codeImage"><img src="media/react.png" alt="React" class="imagenCodigo"></div></li>
+          <li>
+            <div class="primerCurso">
+              <h3>Ultimate Web</h3>
+              <a href="https://www.udemy.com/course/ultimate-web/" target="_blank"
+                ><img src="media/ulimate_web.jpg" alt="ultimate_web_image"
+              /></a>
+            </div>
+          </li>
+          <li>
+            <div class="segundoCurso">
+              <h3>React: De cero a experto</h3>
+              <a href="https://www.udemy.com/course/react-cero-experto/" target="_blank"
+                ><img src="media/react_cero_experto.jpg" alt="react_cero_experto_image"
+              /></a>
+            </div>
+          </li>
+          <li>
+            <div class="tercerCurso">
+              <h3>Fundamentos de programacion con JavaScript</h3>
+              <a
+                href="https://www.udemy.com/course/fundamentos-de-programacion-con-javascript/"
+                target="_blank"
+                ><img src="media/aprende_js_html_css.jpg" alt="aprende_js_html_css_image"
+              /></a>
+            </div>
+          </li>
         </ul>
+      </div>
 
-        <p>Termine la fase 1 y 2 de "Jovenes a Programar", un programa uruguayo que enseña lo basico de programacion a sus alumnos ademas de conocimientos necesarios para estar en un ambiente de trabajo.</p>
+      <h2>Proyectos</h2>
 
-        <div class="cursos">
-            <h2>Tambien complete los siguientes cursos de Udemy:</h2>
-            <ul>
-                <li>
-                    <div class="primerCurso">
-                        <h3>Ultimate Web</h3>
-                        <a href="https://www.udemy.com/course/ultimate-web/" target="_blank"><img src="media/ulimate_web.jpg" alt="ultimate_web_image"></a>
-                        
-                    </div>
-                </li>
-                <li>
-                    <div class="segundoCurso">
-                        <h3>React: De cero a experto</h3>
-                        <a href="https://www.udemy.com/course/react-cero-experto/" target="_blank"><img src="media/react_cero_experto.jpg" alt="react_cero_experto_image"></a>
-                        
-                    </div>
-                </li>
-                <li>
-                    <div class="tercerCurso">
-                        <h3>Fundamentos de programacion con JavaScript</h3>
-                        <a href="https://www.udemy.com/course/fundamentos-de-programacion-con-javascript/" target="_blank"><img src="media/aprende_js_html_css.jpg" alt="aprende_js_html_css_image"></a>
-                        
-                    </div>
-                </li>
-            </ul>
+      <div class="proyectos">
+        <div class="proyecto">
+          <a href="https://shivu-a.github.io/Galeria/" target="_blank"><h2>Galeria</h2></a>
+          <a href="https://shivu-a.github.io/Galeria/" target="_blank"
+            ><img src="media/Proyectos/Galeria.jpg" alt="Galeria"
+          /></a>
+        </div>
+        <div class="proyecto">
+          <a href="https://shivu-a.github.io/App-del-tiempo/" target="_blank"
+            ><h2>App del Clima</h2></a
+          >
+          <a href="https://shivu-a.github.io/App-del-tiempo/" target="_blank"
+            ><img src="media/Proyectos/Clima.jpg" alt="Clima"
+          /></a>
+        </div>
+        <div class="proyecto">
+          <a href="https://shivu-a.github.io/ToDoApp/" target="_blank"
+            ><h2>App de tareas "toDoList"</h2></a
+          >
+          <a href="https://shivu-a.github.io/ToDoApp/" target="_blank"
+            ><img src="media/Proyectos/ToDoApp.jpg" alt=""
+          /></a>
+        </div>
+        <div class="proyecto">
+          <a href="http://google.com" target="_blank"><h2>Proyecto 4</h2></a>
+          <a href="http://google.com" target="_blank"
+            ><img src="media/Proyectos/Galeria.jpg" alt=""
+          /></a>
+        </div>
+      </div>
+
+      <h2>Idiomas que Conozco</h2>
+
+      <div class="idiomas">
+        <div class="espanol">
+          <h3>Español</h3>
+          <p>Control total del idioma español, ya que se trata de mi idioma natal.</p>
         </div>
 
-        <h2>Proyectos</h2>
-
-        <div class="proyectos">
-            <div class="proyecto">
-                <a href="https://shivu-a.github.io/Galeria/" target="_blank"><h2>Galeria</h2></a>
-                <a href="https://shivu-a.github.io/Galeria/" target="_blank"><img src="media/Proyectos/Galeria.jpg" alt="Galeria"></a>
-            </div>
-            <div class="proyecto">
-                <a href="https://shivu-a.github.io/App-del-tiempo/" target="_blank"><h2>App del Clima</h2></a>
-                <a href="https://shivu-a.github.io/App-del-tiempo/" target="_blank"><img src="media/Proyectos/Clima.jpg" alt="Clima"></a>
-            </div>
-            <div class="proyecto">
-                <a href="http://google.com" target="_blank"><h2>Proyecto 3</h2></a>
-                <a href="http://google.com" target="_blank"><img src="media/Proyectos/Galeria.jpg" alt=""></a>
-            </div>
-            <div class="proyecto">
-                <a href="http://google.com" target="_blank"><h2>Proyecto 4</h2></a>
-                <a href="http://google.com" target="_blank"><img src="media/Proyectos/Galeria.jpg" alt=""></a>
-            </div>
+        <div class="ingles">
+          <h3>Ingles</h3>
+          <p>
+            Manejo del Ingles avanzado (C1), se escribir, leer y escuchar fluidamente en Ingles.
+          </p>
         </div>
-
-        <h2>Idiomas que Conozco</h2>
-
-        <div class="idiomas">
-
-            <div class="espanol">
-                <h3>Español</h3>
-                <p>Control total del idioma español, ya que se trata de mi idioma natal.</p>
-            </div>
-
-            <div class="ingles">
-                <h3>Ingles</h3>
-                <p>Manejo del Ingles avanzado (C1), se escribir, leer y escuchar fluidamente en Ingles.</p>
-            </div>
-
-        </div>
+      </div>
     </div>
 
-
     <div id="contactame" class="contactame">
-        <h1>Contactame</h1>
-        <div class="formContacto">
-            <form action="">
+      <h1>Contactame</h1>
+      <div class="formContacto">
+        <form action="">
+          <h3>E-Mail</h3>
+          <input placeholder="Ingrese su Email" type="email" name="Email" id="emailInput" />
 
-                <h3>E-Mail</h3>
-                <input placeholder="Ingrese su Email" type="email" name="Email" id="emailInput">
+          <h3>Nombre</h3>
+          <input placeholder="Ingrese su nombre" type="text" name="Nombre" id="nombreInput" />
 
-                <h3>Nombre</h3>
-                <input placeholder="Ingrese su nombre" type="text" name="Nombre" id="nombreInput">
+          <h3>Descripción</h3>
+          <input
+            placeholder="Ingrese una descripción si esta interesado en contratarme"
+            type="text"
+            name="Descripcion"
+            id="descripcionInput"
+          />
 
-                <h3>Descripción</h3>
-                <input placeholder="Ingrese una descripción si esta interesado en contratarme" type="text" name="Descripcion" id="descripcionInput">
-
-                <input type="submit" value="Enviar" id="inputEnviar">
-            </form>
-        </div>
+          <input type="submit" value="Enviar" id="inputEnviar" />
+        </form>
+      </div>
     </div>
 
     <footer>
-        <a target="_blank" href="https://github.com/Shivu-a?tab=repositories"><i class="fa-brands fa-github"></i></a>
-        <a target="_blank" href="https://www.linkedin.com/in/sebasti%C3%A1n-d%C3%ADaz-dopazo-95b688235/"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a target="_blank" href="mailto:sebastiandiazdopazo@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-        <a target="_blank" href="http://"><i class="fa-brands fa-whatsapp"></i></a>
+      <a target="_blank" href="https://github.com/Shivu-a?tab=repositories"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/sebasti%C3%A1n-d%C3%ADaz-dopazo-95b688235/"
+        ><i class="fa-brands fa-linkedin-in"></i
+      ></a>
+      <a target="_blank" href="mailto:sebastiandiazdopazo@gmail.com"
+        ><i class="fa-solid fa-envelope"></i
+      ></a>
+      <a target="_blank" href="http://"><i class="fa-brands fa-whatsapp"></i></a>
     </footer>
-</body>
+  </body>
 </html>

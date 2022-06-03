@@ -1,7 +1,9 @@
-@font-face {
+/* @font-face {
   font-family: Cairo;
   src: url(Cairo/static/Cairo-Regular.ttf);
-}
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 
 * {
   margin: 0;

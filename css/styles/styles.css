@@ -1,6 +1,6 @@
 @font-face {
   font-family: Cairo;
-  src: url(/Cairo/static/Cairo-Regular.ttf);
+  src: url(Cairo/static/Cairo-Regular.ttf);
 }
 
 * {

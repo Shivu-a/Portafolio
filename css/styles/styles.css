@@ -423,7 +423,7 @@ form input {
   position: fixed;
   display: none;
   right: 20px;
-  bottom: 30px;
+  bottom: 5px;
   overflow: hidden;
   transition: all 250ms;
 }
@@ -451,10 +451,11 @@ form input {
 
 .switch button {
   aspect-ratio: 1;
-  padding: 15px 17px;
+  padding: 10px 14px;
   position: fixed;
-  bottom: 20px;
-  left: 30px;
+  bottom: 10px;
+  border: none;
+  left: 7px;
   color: white;
   background-color: black;
   cursor: pointer;

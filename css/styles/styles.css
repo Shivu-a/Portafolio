@@ -1,9 +1,4 @@
-/* @font-face {
-  font-family: Cairo;
-  src: url(Cairo/static/Cairo-Regular.ttf);
-} */
-
-@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
 
 * {
   margin: 0;
@@ -23,6 +18,7 @@ nav {
   justify-content: space-evenly;
   background-color: black;
   z-index: 10;
+  width: 100%;
 }
 
 nav a {
@@ -92,6 +88,7 @@ body li {
   width: 400px;
   height: 400px;
   background-color: bisque;
+  aspect-ratio: 1;
 }
 
 .sobreMi {
@@ -145,17 +142,26 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+}
+
+.conocimientos h1 {
+  width: 100%;
+  text-align: center;
 }
 
 .conocimientos p {
+  text-align: center;
   margin: 70px 0px;
+  width: 100%;
 }
 
 .conocimientos ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 .conocimientos ul li {
@@ -221,6 +227,7 @@ h1 {
   flex-direction: row;
   margin-bottom: 30px;
   justify-content: space-evenly;
+  width: 100%;
 }
 
 .cursos ul li {
@@ -234,23 +241,19 @@ h1 {
   cursor: pointer;
 }
 
-.primerCurso,
-.segundoCurso,
-.tercerCurso {
+.curso {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  width: 500px;
+  width: 20vw;
   box-shadow: 0px 0px 0px 2px white;
   padding: 40px;
   height: 400px;
   text-align: center;
 }
 
-.primerCurso img,
-.segundoCurso img,
-.tercerCurso img {
+.curso img {
   max-width: 100%;
   max-height: auto;
   border-radius: 10px;
@@ -258,9 +261,7 @@ h1 {
   transition: all 0.3s;
 }
 
-.primerCurso img:hover,
-.segundoCurso img:hover,
-.tercerCurso img:hover {
+.curso img:hover {
   transform: scale(1.1);
 }
 
@@ -273,6 +274,7 @@ h1 {
   margin: 60px 0px;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .grupoProyectos {
@@ -287,7 +289,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 500px;
+  width: 20vw;
   height: 350px;
   border: 2px solid white;
   padding: 10px;
@@ -335,7 +337,7 @@ h2 span {
 
 .espanol,
 .ingles {
-  width: 300px;
+  width: 40vw;
   margin: 50px;
   padding: 10px;
   box-shadow: 0px 0px 0px 2px white;
@@ -448,4 +450,52 @@ footer a:hover {
 
 #mailFooter {
   filter: invert(1);
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    flex-direction: column;
+  }
+  nav a {
+    text-align: center;
+  }
+
+  .imagenFake {
+    width: 90vw;
+    height: auto;
+  }
+
+  .conocimientos ul {
+    justify-content: center;
+  }
+
+  .curso {
+    height: auto;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 0;
+    width: 90%;
+  }
+
+  .proyecto {
+    height: auto;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 10 0;
+    width: 90%;
+  }
+
+  .formContacto {
+    padding: 5vw;
+    border: 2px solid white;
+  }
+
+  form input {
+    width: 70vw;
+    height: 50px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+  }
 }

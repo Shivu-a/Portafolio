@@ -55,6 +55,10 @@ nav a:hover::before {
   height: 100%;
 }
 
+#trigram {
+  display: none;
+}
+
 :target {
   scroll-margin-top: 70px;
 }
@@ -243,13 +247,12 @@ h1 {
 
 .curso {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
   width: 20vw;
   box-shadow: 0px 0px 0px 2px white;
   padding: 40px;
-  height: 400px;
+  height: 35vh;
   text-align: center;
 }
 
@@ -337,7 +340,7 @@ h2 span {
 
 .espanol,
 .ingles {
-  width: 40vw;
+  width: 30vw;
   margin: 50px;
   padding: 10px;
   box-shadow: 0px 0px 0px 2px white;
@@ -460,6 +463,27 @@ footer a:hover {
     text-align: center;
   }
 
+  #trigram {
+    display: block;
+  }
+
+  nav a:not(:nth-child(1)) {
+    display: none;
+  }
+
+  .navbar.responsiveNavbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .navbar.responsiveNavbar a {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+  }
+
   .imagenFake {
     width: 90vw;
     height: auto;
@@ -483,6 +507,11 @@ footer a:hover {
     padding: 10px;
     margin: 10 0;
     width: 90%;
+  }
+
+  .espanol,
+  .ingles {
+    width: 65vw;
   }
 
   .formContacto {

@@ -413,6 +413,36 @@ form input {
   color: black;
 }
 
+.flechaGoUp {
+  position: fixed;
+  display: none;
+  right: 20px;
+  bottom: 30px;
+  overflow: hidden;
+  transition: all 250ms;
+}
+
+.flechaGoUp i {
+  background-color: black;
+  padding: 10px 17px;
+  position: relative;
+  font-size: 50px;
+  color: white;
+  overflow: hidden;
+  border-radius: 50%;
+  transition: all 250ms;
+  z-index: 1;
+}
+
+.flechaGoUp:hover {
+  transform: translateY(-20px);
+}
+
+.flechaGoUp:hover i {
+  color: black;
+  background-color: white;
+}
+
 /*  Footer  */
 
 footer {

@@ -77,13 +77,24 @@ nav a:hover::before {
 
 body {
   background-color: #1e1e1e;
+  color: white;
+}
+
+body .light-mode {
+  background-color: azure;
 }
 
 body h1,
-body p,
-body h2,
-body li {
+body h2 {
   color: white;
+}
+
+h3 {
+  color: white;
+}
+
+body #borderBoxWhite {
+  border: 2px solid#1e1e1e !important;
 }
 
 /*  Sobre Mi  */
@@ -250,7 +261,7 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   width: 20vw;
-  box-shadow: 0px 0px 0px 2px white;
+  border: 2px solid white;
   padding: 40px;
   height: 35vh;
   text-align: center;
@@ -343,13 +354,12 @@ h2 span {
   width: 30vw;
   margin: 50px;
   padding: 10px;
-  box-shadow: 0px 0px 0px 2px white;
+  border: 2px solid white;
 }
 
 .espanol h3,
 .ingles h3 {
   text-align: center;
-  color: white;
   font-weight: 900;
 }
 
@@ -367,10 +377,6 @@ h2 span {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-.contactame h3 {
-  color: white;
 }
 
 .formContacto {
@@ -441,6 +447,33 @@ form input {
 .flechaGoUp:hover i {
   color: black;
   background-color: white;
+}
+
+.switch button {
+  aspect-ratio: 1;
+  padding: 15px 17px;
+  position: fixed;
+  bottom: 20px;
+  left: 30px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.switch button:hover {
+  transform: scale(1.07);
+  background-color: aliceblue;
+}
+
+.switch button:hover i {
+  color: black;
+}
+
+.switch button i {
+  font-size: 20px;
+  color: white;
+  padding: 15px;
 }
 
 /*  Footer  */

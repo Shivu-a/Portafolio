@@ -409,6 +409,9 @@ form input {
 #inputEnviar {
   width: 200px;
   color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
   font-weight: 900;
   background: rgba(0, 0, 0, 0.5);
   transition: all 0.3s;

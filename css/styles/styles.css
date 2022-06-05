@@ -403,6 +403,7 @@ form input {
 
 #descripcionInput {
   height: 300px;
+  width: 100%;
 }
 
 #inputEnviar {

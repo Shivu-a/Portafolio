@@ -5,9 +5,11 @@ let curso = document.querySelectorAll(".curso");
 let proyecto = document.querySelectorAll(".proyecto");
 let espanol = document.querySelectorAll(".espanol");
 let ingles = document.querySelectorAll(".ingles");
+let medio = document.querySelectorAll(".medio");
+let iMedio = document.querySelectorAll(".iMedio");
 let formContacto = document.querySelectorAll(".formContacto");
 
-const arrayDivs = [curso, proyecto, espanol, ingles, formContacto];
+const arrayDivs = [curso, proyecto, espanol, ingles, formContacto, medio];
 
 function cambiarFondo() {
   if (body.className === "dark-mode") {
@@ -24,12 +26,20 @@ function cambiarFondo() {
       });
     }
 
+    iMedio.forEach((element) => {
+      element.style.color = "black";
+    });
+
     body.className = "light-mode";
   } else {
     body.style.backgroundColor = "#1e1e1e";
     body.style.color = "white";
 
     h3.forEach((element) => {
+      element.style.color = "white";
+    });
+
+    iMedio.forEach((element) => {
       element.style.color = "white";
     });
 

@@ -116,7 +116,7 @@ body #borderBoxWhite {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
-  margin: 50px 0px;
+  margin: 1rem 0px;
 }
 
 .yo {
@@ -176,7 +176,7 @@ h1 {
 
 .conocimientos p {
   text-align: center;
-  margin: 70px 0px;
+  margin: 2rem 0 0 0;
   width: 100%;
 }
 
@@ -208,6 +208,10 @@ h1 {
 .subtitulo h2 {
   text-align: center;
   padding: 20px;
+}
+
+.subtituloResponsive{
+  margin: 2.5rem 0;
 }
 
 .codeImage {
@@ -472,6 +476,8 @@ textarea {
   border-radius: 10px;
 }
 
+/* Flecha y cambio de dark/lightmode */
+
 .flechaGoUp {
   position: fixed;
   display: none;
@@ -601,6 +607,11 @@ footer a:hover {
     width: 80%;
   }
 
+  #sobreMiParagrafo p{
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+
   .conocimientos ul {
     justify-content: center;
   }
@@ -620,9 +631,11 @@ footer a:hover {
     border-left: 2px solid var(--color-auxiliar-light-mode);
   }
 
-  .mediosContacto{
-    flex-direction: column;
+  .espanol,
+  .ingles {
+    height: max-content;
   }
+
 
   .formContacto {
     padding: 5vw;

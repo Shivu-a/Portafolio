@@ -1,0 +1,157 @@
+html {
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.inicioContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(20px);
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorBoton {
+  border: 50px solid black;
+  height: 69%;
+  width: auto;
+  aspect-ratio: 1/1;
+  transform: rotateZ(45deg);
+  position: relative;
+  transition: all 500ms ease-in-out;
+  animation: aparecer 2s ease-in-out;
+}
+
+.contenedorBoton::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 99%;
+  width: 99%;
+  border: 5px solid gold;
+}
+
+.contenedorBoton::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+  border: 5px solid gold;
+  transform: translate(-55px, -55px);
+}
+
+.animatedButton {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  border: 2px solid gold;
+  font-size: 2rem;
+  padding: 50px;
+  color: white;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: rotateZ(45deg);
+  transition: all 500ms ease-in-out;
+}
+
+.animatedButton::after {
+  content: "";
+  border: 1px double gold;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: rotateZ(45deg);
+}
+
+.animatedButton::before {
+  content: "";
+  border: 1px solid gold;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  transform: rotateZ(45deg);
+}
+
+.texto {
+  animation: aparicion 1.3s ease-in-out;
+  transform: rotateZ(-45deg);
+  transition: all 500ms ease-in-out;
+}
+
+.desaparecer {
+  animation: desaparecer 1200ms ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes girar {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes aparicion {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: rotateZ(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateZ(45deg);
+  }
+}
+@keyframes desaparecer {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2.5);
+  }
+}

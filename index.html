@@ -2,297 +2,301 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sebastian Diaz Dopazo</title>
-    <link rel="stylesheet" href="css/styles/styles.css" />
+    <title>Portafolio App</title>
+    <link rel="stylesheet" href="/css/initiation.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/fontAwesome/all.css" />
-    <link rel="shortcut icon" href="media/SDD.png" type="image/x-icon" />
   </head>
-  <body class="dark-mode">
-    <!-- Navbar -->
+  <body>
+    <!-- Inicio -->
+    <div class="inicioContainer">
+      <div class="container">
+        <div class="contenedorBoton">ㅤ</div>
+      </div>
+      <button id="boton" class="animatedButton">
+        <div class="texto">START</div>
+      </button>
+    </div>
 
-    <nav>
-      <a id="trigram" href="javascript:void(0);">&#709;</a>
-      <a href="#sobreMiH1" class="goTo" rel="noopener noreferrer">Sobre Mi</a>
-      <a href="#conocimientos" class="goTo" rel="noopener noreferrer">Conocimientos</a>
-      <a href="#contactame" class="goTo" rel="noopener noreferrer">Contactame</a>
+    <!-- Canvas -->
+    <canvas id="canvas1"></canvas>
+
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a id="navLink" href="#aboutMe" data-goTo="About Me"
+        ><i class="fa-solid fa-id-badge"></i></i
+      ></a>
+      <a id="navLink" href="#mySkills" data-goTo="My Skills"
+        ><i class="fa-solid fa-code"></i
+      ></a>
+      <a id="navLink" href="#proyects" data-goTo="Proyects"
+        ><i class="fa-solid fa-list-check"></i></i
+      ></a>
+      <a id="navLink" href="#languages" data-goTo="Languages"><i class="fa-solid fa-language"></i></a>
+      <a id="navLink" href="#contactMe" data-goTo="Contact Me"><i class="fa-solid fa-envelope"></i></i></a>
     </nav>
 
-    <!-- Sobre Mi -->
+    <!-- Portafolio -->
 
-    <h1 id="sobreMiH1">Sobre Mi</h1>
-    <div class="sobreMi">
-      <div class="yo">
-        <img src="media/FotoCV.jpg" alt="Yo" />
+    <!-- About Me -->
+    <section id="aboutMe" class="aboutMe">
+      <div class="imgAboutMe">
+        <img src="media/FotoCV.jpg" alt="Me" />
       </div>
-      <div id="sobreMiParagrafo">
+      <div class="textAboutMe">
+        <h2 class="title">
+          <span class="animatedTitle">A</span>
+          <span class="animatedTitle">b</span>
+          <span class="animatedTitle">o</span>
+          <span class="animatedTitle">u</span>
+          <span class="animatedTitle">t</span>
+          <span class="animatedTitle">&nbsp;</span>
+          <span class="animatedTitle">M</span>
+          <span class="animatedTitle">e</span>
+        </h2>
         <p>
-          ¡Buenas! Soy Sebastián, un programador con conocimientos tanto de front-end como de
-          back-end. <br />
-          Me gusta trabajar como un front-end developer y mejorar gracias a la experiencia que se
-          gana al trabajar.
+          Hi! My name is Sebastian, I am a programmer with knowledge of both
+          front-end as well as back-end, altrough I personally preffer working
+          with the front-end of things. <br />I like to work with teams to gain
+          experience and grow my skills into a greater level.
         </p>
       </div>
-    </div>
+    </section>
 
-    <!-- Conocimientos -->
+    <section id="mySkills" class="mySkills">
+      <div class="textMySkills">
+        <h2 class="title">
+          <span class="animatedTitle">M</span>
+          <span class="animatedTitle">y</span>
+          <span class="animatedTitle">&nbsp;</span>
+          <span class="animatedTitle">S</span>
+          <span class="animatedTitle">k</span>
+          <span class="animatedTitle">i</span>
+          <span class="animatedTitle">l</span>
+          <span class="animatedTitle">s</span>
+        </h2>
 
-    <div id="conocimientos" class="conocimientos">
-      <h1>Conocimientos</h1>
-      <h3 class="subtituloResponsive">Me especializo en desarollo Web front-end y utilizo las siguientes herramientas:</h3>
-      <ul>
-        <li>
-          <h3>HTML5</h3>
-          <div class="codeImage">
-            <img src="media/tools/HTML5.png" alt="HTML5" class="imagenCodigo" />
-          </div>
-        </li>
-        <li>
-          <h3>CSS</h3>
-          <div class="codeImage">
-            <img src="media/tools/css.png" alt="CSS" id="cssImagen" class="imagenCodigo" />
-          </div>
-        </li>
-        <li>
-          <h3>JavaScript (EM6)</h3>
-          <div class="codeImage">
-            <img src="media/tools/JScript.png" alt="JavaScript" class="imagenCodigo" />
-          </div>
-        </li>
-        <li>
-          <h3>Bootsrap</h3>
-          <div class="codeImage">
-            <img src="media/tools/Bootstrap.png" alt="Bootsrap" class="imagenCodigo" />
-          </div>
-        </li>
-        <li>
-          <h3>React</h3>
-          <div class="codeImage">
-            <img src="media/tools/react.png" alt="React" class="imagenCodigo" />
-          </div>
-        </li>
-      </ul>
-
-      <!-- Cursos -->
-
-      <div class="cursos">
-        <div class="subtitulo">
-          <h2>Cursos</h2>
-        </div>
-        <h3 class="subtituloResponsive">He completado los siguientes cursos de Udemy:</h3>
-        <ul>
-          <li>
-            <div class="curso">
-              <h3>Ultimate Web</h3>
-              <a href="https://www.udemy.com/course/ultimate-web/" target="_blank"
-                ><img src="media/cursos/ulimate_web.jpg" alt="ultimate_web_image"
-              /></a>
-            </div>
-          </li>
-          <li>
-            <div class="curso">
-              <h3>React: De cero a experto</h3>
-              <a href="https://www.udemy.com/course/react-cero-experto/" target="_blank"
-                ><img src="media/cursos/react_cero_experto.jpg" alt="react_cero_experto_image"
-              /></a>
-            </div>
-          </li>
-          <li>
-            <div class="curso">
-              <h3>Aprende JS HTML CSS</h3>
-              <a
-                href="https://www.udemy.com/course/fundamentos-de-programacion-con-javascript/"
-                target="_blank"
-                ><img src="media/cursos/aprende_js_html_css.jpg" alt="aprende_js_html_css_image"
-              /></a>
-            </div>
-          </li>
-        </ul>
-
-        <p>
-          Termine la fase 1 y 2 de "Jovenes a Programar", un programa uruguayo que enseña lo basico
-          de programacion a sus alumnos ademas de conocimientos necesarios para estar en un ambiente
-          de trabajo.
-        </p>
+        <p>As I've mentioned before, my main skills fall into the front-end
+          side, and so these are the tools that I work with</p>
       </div>
 
-      <!-- Proyectos -->
+      <div class="skills">
+        <div class="tools">
 
-      <div class="proyectos">
-        <div class="subtitulo">
-          <h2>Proyectos</h2>
+          <div class="html">
+            <h4 class="overTitle">HTML5</h4>
+            <img src="media/tools/HTML5.png" alt="HTML5" />
+          </div>
+  
+          <div class="css">
+            <h4 class="overTitle">CSS</h4>
+            <img src="media/tools/css.png" alt="CSS" />
+          </div>
+  
+          <div class="JSCript">
+            <h4 class="overTitle">JavaScript</h4>
+            <img src="media/tools/JScript.png" alt="JavaScript" />
+          </div>
+  
+          <div class="bootstrap">
+            <h4 class="overTitle">Bootstrap</h4>
+            <img src="media/tools/Bootstrap.png" alt="Bootstrap" />
+          </div>
+  
+          <div class="react">
+            <h4 class="overTitle">React</h4>
+            <img src="media/tools/react.png" alt="React" />
+          </div>
         </div>
-        <h3 class="subtituloResponsive">Soy el autor de los siguientes proyectos:</h3>
-        <div class="grupoProyectos">
-          <div class="proyecto">
-            <a href="https://shivu-a.github.io/Galeria/" target="_blank"><h3>Galeria</h3></a>
-            <a href="https://shivu-a.github.io/Galeria/" target="_blank"
-              ><img src="media/Proyectos/Galeria.jpg" alt="Galeria"
-            /></a>
-          </div>
-          <div class="proyecto">
-            <a href="https://shivu-a.github.io/App-del-tiempo/" target="_blank"
-              ><h3>App del Clima</h3></a
-            >
-            <a href="https://shivu-a.github.io/App-del-tiempo/" target="_blank"
-              ><img src="media/Proyectos/Clima.jpg" alt="Clima"
-            /></a>
-          </div>
-          <div class="proyecto">
-            <a href="https://shivu-a.github.io/ToDoApp/" target="_blank"
-              ><h3>App de tareas "<span>ToDoApp</span>"</h3></a
-            >
-            <a href="https://shivu-a.github.io/ToDoApp/" target="_blank"
-              ><img src="media/Proyectos/ToDoApp.jpg" alt="ToDoApp"
-            /></a>
-          </div>
-          <div class="proyecto">
-            <a href="https://shivu-a.github.io/GeneradorPassword/" target="_blank"
-              ><h3>Generador de Contraseñas</h3></a
-            >
-            <a href="https://shivu-a.github.io/GeneradorPassword/" target="_blank"
-              ><img src="media/Proyectos/GeneradorPassword.jpg" alt="GeneradorPassword"
-            /></a>
-          </div>
-          <div class="proyecto">
-            <a
-              href="https://shivu-a.github.io/PokeWordle/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><h3>PokeWordle</h3></a
-            >
-            <a
-              href="https://shivu-a.github.io/PokeWordle/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img src="media/Proyectos/PokeWordle.jpg" alt="PokeWordle"
-            /></a>
-          </div>
+        <div class="abilities">
+          <h4>In a work enviorment is not only what tecnichal knowledge you have that's important, so here are my strengths as an individual</h4>
+          <ul>
+            <li>Calm</li>
+            <li>Patient</li>
+            <li>Respectful</li>
+            <li>Self-regulation</li>
+            <li>Self-managment</li>
+            <li>Curious</li>
+            <li>Friendly</li>
+          </ul>
         </div>
       </div>
+    </section>
 
-      <!-- Idiomas -->
-
-      <div class="idiomasDiv">
-        <div class="subtitulo">
-          <h2>Idiomas que Conozco</h2>
-        </div>
-        <div class="idiomas">
-          <div class="espanol">
-            <h3>Español</h3>
-            <p>Control total del idioma español, ya que se trata de mi idioma natal.</p>
-          </div>
-
-          <div class="ingles">
-            <h3>Ingles</h3>
-            <p>
-              Manejo del Ingles avanzado (C1), se escribir, leer y escuchar fluidamente en Ingles.
-            </p>
-          </div>
-        </div>
+    <section id="proyects" class="proyects">
+      <div class="textProyects">
+        <h2 class="title">
+          <span class="animatedTitle">P</span>
+          <span class="animatedTitle">r</span>
+          <span class="animatedTitle">o</span>
+          <span class="animatedTitle">y</span>
+          <span class="animatedTitle">e</span>
+          <span class="animatedTitle">c</span>
+          <span class="animatedTitle">t</span>
+          <span class="animatedTitle">s</span>
+        </h2>
       </div>
-    </div>
 
-    <!-- Contacto -->
+      <div class="proyectsInnerDiv">
 
-    <div id="contactame" class="contactame">
-      <h1>Contactame</h1>
-
-      <div class="mediosContacto">
-        <div class="medio">
-          <label for="Whatsapp">Whatsapp</label>
-          <a target="_blank" href="https://wa.me/message/VUGV3ZGKPTZTO1"
-            ><i class="fa-brands fa-whatsapp iMedio"></i
-          ></a>
-        </div>
-        <div class="medio">
-          <label for="celular">Celular</label>
-          <a href="tel:+59892302595"><i class="fa-solid fa-phone iMedio"></i></a>
-        </div>
-        <div class="medio">
-          <label for="mail">Mail</label>
-          <a target="_blank" href="mailto:sebastiandiazdopazo@gmail.com"
-            ><i class="fa-solid fa-envelope iMedio"></i
-          ></a>
-        </div>
-        <div class="medio">
-          <label for="linkedin">Linkedin</label>
+        <div class="proyectLink">
           <a
+            href="#"
             target="_blank"
-            href="https://www.linkedin.com/in/sebasti%C3%A1n-d%C3%ADaz-dopazo-95b688235/"
-            ><i class="fa-brands fa-linkedin-in iMedio"></i
-          ></a>
+            rel="noopener noreferrer"
+            data-titulo="PokeWordle"
+            ><img src="media/Proyectos/PokeWordle.jpg" alt="PokeWordle"
+          /></a>
+        </div>
+
+        <div class="proyectLink">
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-titulo="Password Generator"
+            ><img
+              src="media/Proyectos/GeneradorPassword.jpg"
+              alt="PasswordGenerator"
+          /></a>
+        </div>
+
+        <div class="proyectLink">
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-titulo="Gallery"
+            ><img src="media/Proyectos/Galeria.jpg" alt="Gallery"
+          /></a>
+        </div>
+
+        <div class="proyectLink">
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-titulo="Simple Weather App"
+            ><img src="media/Proyectos/Clima.jpg" alt="WeatherApp"
+          /></a>
+        </div>
+
+        <div class="proyectLink">
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-titulo="To Do App"
+            ><img src="media/Proyectos/ToDoApp.jpg" alt="ToDoApp"
+          /></a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="languages" class="languages">
+      <div class="textLanguages">
+        <h2 class="title">
+          <span class="animatedTitle">L</span>
+          <span class="animatedTitle">a</span>
+          <span class="animatedTitle">n</span>
+          <span class="animatedTitle">g</span>
+          <span class="animatedTitle">u</span>
+          <span class="animatedTitle">a</span>
+          <span class="animatedTitle">g</span>
+          <span class="animatedTitle">e</span>
+          <span class="animatedTitle">s</span>
+        </h2>
+      </div>
+
+      <div class="languagesDiv">
+        <div class="languageInnerDiv">
+          <h2>Spanish</h2>
+          <div class="flag">
+            <img src="media/languages/espanol.png" alt="" srcset="">
+          </div>
+          <p>
+            I have full control of the Spanish language, since it's my native
+            language.
+          </p>
+        </div>
+        <div class="languageInnerDiv">
+          <h2>English</h2>
+          <div class="flag">
+            <img src="media/languages/english.png" alt="" srcset="">
+          </div>
+          <p>
+            I am fluent in English, I have an advanced level (C1), I know how to
+            read, write, listen flawlessly and I can mantain conversations with
+            other people in English.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contactMe" class="contactMe">
+      <div class="textContactMe">
+        <h2 class="title">
+          <span class="animatedTitle">C</span>
+          <span class="animatedTitle">o</span>
+          <span class="animatedTitle">n</span>
+          <span class="animatedTitle">t</span>
+          <span class="animatedTitle">a</span>
+          <span class="animatedTitle">c</span>
+          <span class="animatedTitle">t</span>
+          <span class="animatedTitle">&nbsp;</span>
+          <span class="animatedTitle">M</span>
+          <span class="animatedTitle">e</span>
+        </h2>
+
+        <div class="iconsContactMe">
+          <a target="_blank" href="https://github.com/Shivu-a?tab=repositories"><i class="fa-brands fa-github"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/in/sebasti%C3%A1n-d%C3%ADaz-dopazo-95b688235/"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a target="_blank" href="mailto:sebastiandiazdopazo@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+          <a href="tel:+59892302595"><i class="fa-solid fa-phone"></i></a>
+          <a target="_blank" href="https://wa.me/message/VUGV3ZGKPTZTO1"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
       </div>
 
-      <div class="formContacto">
+      <div class="contactMeForm">
         <form action="https://formsubmit.co/sebastiandiazdopazo@gmail.com" method="POST">
           <h3>E-Mail<small>*</small></h3>
           <input
-            placeholder="Ingrese su Email"
+            placeholder="Your E-Mail"
             type="email"
             name="email"
             id="emailInput"
             required
           />
 
-          <h3>Nombre<small>*</small></h3>
+          <h3>Name<small>*</small></h3>
           <input
-            placeholder="Ingrese su nombre"
+            placeholder="Your Name"
             type="text"
             name="name"
             id="nombreInput"
             required
           />
 
-          <h3>Descripción</h3>
+          <h3>Description</h3>
           <textarea
-            placeholder="Ingrese una descripción si esta interesado en contratarme"
+            placeholder="Your message goes here"
             type="text"
             name="Descripcion"
             id="descripcionInput"
           ></textarea>
 
-          <input type="submit" value="Enviar" id="inputEnviar" />
+          <button type="submit" value="Enviar" id="inputEnviar"><span>Send</span></button>
           <input type="hidden" name="_next" value="https://shivu-a.github.io/Portafolio/" />
         </form>
       </div>
-    </div>
+    </section>
 
-    <div class="flechaGoUp" id="botonGoToTop">
-      <a href="#sobreMiH1" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up"></i></a>
-    </div>
-
-    <div class="switch">
-      <button id="botonSwitch"><i class="fa-regular fa-lightbulb"></i></button>
-    </div>
-
-    <!-- Footer -->
-
-    <footer>
-      <a target="_blank" href="https://github.com/Shivu-a?tab=repositories"
-        ><i class="fa-brands fa-github"></i
-      ></a>
-      <a
-        target="_blank"
-        href="https://www.linkedin.com/in/sebasti%C3%A1n-d%C3%ADaz-dopazo-95b688235/"
-        ><i class="fa-brands fa-linkedin-in"></i
-      ></a>
-      <a target="_blank" href="mailto:sebastiandiazdopazo@gmail.com"
-        ><i class="fa-solid fa-envelope"></i
-      ></a>
-      <a href="tel:+59892302595"><i class="fa-solid fa-phone"></i></a>
-      <a target="_blank" href="https://wa.me/message/VUGV3ZGKPTZTO1"
-        ><i class="fa-brands fa-whatsapp"></i
-      ></a>
-    </footer>
+    <script src="scripts/iniciar.js"></script>
+    <script src="scripts/background.js"></script>
+    <script src="scripts/titleAnimation.js"></script>
   </body>
-
-  <!-- Scripts -->
-
-  <script src="scripts/script.js"></script>
-  <script src="scripts/flechaGoUp.js"></script>
-  <script src="scripts/modeSwitch.js"></script>
-  <script src="scripts/form.js"></script>
 </html>

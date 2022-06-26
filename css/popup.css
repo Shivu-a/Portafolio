@@ -1,0 +1,95 @@
+:root {
+  --primary-color: black;
+  --secondary-color: white;
+  --auxiliar-color: #b0285e;
+  --bg-color: #1e1e1e;
+  --transition-speed: 400ms;
+}
+
+.blackBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: all var(--transition-speed) ease-in-out;
+}
+
+.popUp {
+  position: relative;
+  width: min(1000px, 90vw);
+  height: min(500px, 80%);
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  transform: translateY(-90vh);
+  transition: all var(--transition-speed) ease-in-out;
+}
+
+.closeX {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.leftDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 70%;
+  flex: 50%;
+}
+
+.leftDiv h2 {
+  width: 100%;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.leftDiv img {
+  width: 90%;
+  height: auto;
+  aspect-ratio: 16/9;
+  border-radius: 0.5rem;
+  border: 1px solid var(--secondary-color);
+}
+
+.rightDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 50%;
+  flex: 50%;
+  padding: 1rem;
+}
+
+.rightDiv a {
+  text-decoration: none;
+  background-color: var(--auxiliar-color);
+  padding: 1rem;
+  border-radius: 1rem;
+  color: var(--secondary-color);
+  font-weight: 700;
+  box-shadow: 0px 0px 10px 0px var(--auxiliar-color);
+}
+
+@media screen and (max-width: 900px) {
+  .leftDiv {
+    padding-top: 2.5rem;
+  }
+}

@@ -271,6 +271,7 @@ section {
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   padding: 0.5rem;
   gap: 1rem;
   background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));

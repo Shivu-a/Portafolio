@@ -28,7 +28,7 @@ trigger.forEach((element) => {
     imagen.src = element.dataset.image;
 
     let linkedButton = document.createElement("a");
-    linkedButton.innerHTML = "Go to Proyect";
+    linkedButton.innerHTML = `Go to ${element.dataset.type}`;
     linkedButton.href = element.dataset.link;
     linkedButton.target = "_blank";
 

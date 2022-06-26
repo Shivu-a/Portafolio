@@ -284,6 +284,75 @@ section {
   transform: translateY(-5px);
 }
 
+/* Courses */
+
+.textCourses {
+  display: flex;
+  flex: 50%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.textCourses h2 {
+  padding: 2rem;
+}
+
+.textCourses p {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+
+.coursesInnerDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.course {
+  position: relative;
+  height: min-content;
+  width: 60%;
+  aspect-ratio: 16/9;
+  border: 1px solid var(--secondary-color);
+  overflow: hidden;
+}
+
+.course a::after {
+  box-sizing: border-box;
+  content: attr(data-titulo);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--auxiliar-color);
+  background: linear-gradient(transparent, black);
+  padding: 1.5rem;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(120px);
+  transition: all var(--transition-speed) ease-in-out;
+  overflow: hidden;
+}
+
+.course:hover a::after {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.course img {
+  height: auto;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
 /* Proyects */
 
 .textProyects {
@@ -633,6 +702,17 @@ footer a:hover {
 
   .textLanguages {
     padding: 1.5rem 0rem;
+  }
+
+  .coursesInnerDiv {
+    background: none;
+  }
+
+  .coursesInnerDiv .course a::after {
+    opacity: 1;
+    transform: unset;
+    font-size: 1.2rem;
+    padding: 0.7rem;
   }
 
   .textProyects {

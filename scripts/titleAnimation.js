@@ -2,9 +2,9 @@ const titleElement = document.querySelectorAll(".animatedTitle");
 
 titleElement.forEach((element) => {
   element.addEventListener("mouseover", (element) => {
-    element.toElement.className += " animationTitle";
+    element.target.className += " animationTitle";
     setTimeout(() => {
-      element.toElement.className = "animatedTitle";
+      element.target.className = "animatedTitle";
     }, 450);
   });
 });
